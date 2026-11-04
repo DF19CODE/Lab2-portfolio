@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--html start-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="DEDJ" name="author">
+    <title>LAB2</title>
+    <link rel="stylesheet" href="styles.css" />
+  <!--javascript start-->
+    <script src="script.js" defer></script>
+
+</head>
+  <body>
+	<!--body start-->
+
+
+    <div class="wrapper">
+
+        <!-- navigation start -->
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#section1">About</a>
+                </li>
+
+                <li>
+                    <a href="#section2">Interests</a>
+                </li>
+
+                <li>
+                    <a href="#section3">Goals</a>
+                </li>
+
+                <li>
+                    <a href="#section4">Contact</a>
+                </li>
+
+                <li>
+                    <a href="ExternalPage.html">External Page</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- navigation end -->
+
+
+        <!-- about start -->
+        <section id="section1" class="section1">
+
+            <header>
+                <h1>About Me</h1>
+
+                <div class="image-box"><img src="image/imgLab1.jpg"alt="Photo of my princess">
+                </div>
+
+                <p>
+                    One childhood memory that I remember was when one of
+                    my teachers, who was married to a general, took us to
+                    an airbase. We had the opportunity to try an AC-130
+                    Hercules flight simulator. It was a very interesting
+                    and exciting experience. That memory has stayed with
+                    me because I was fascinated by airplanes when I was younger.
+                </p>
+            </header>
+
+        </section>
+        <!-- about end -->
+
+
+        <main><!-- main start-->
+
+            <!-- interests start -->
+            <section id="section2" class="section2">
+
+                <h2>Interests</h2>
+
+                <table>
+                    <caption>My Interests</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Interest</th>
+                            <th>Area</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>Programming</td>
+                        </tr>
+
+                        <tr>
+                            <td>Game Development</td>
+                            <td>Game Design</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    My interest in programming began in gymnasium.
+                    My mathematics teacher introduced me to programming
+                    and showed me HTML and CSS. That was when my interest
+                    in web development began.
+                </p>
+
+                <div class="interest-images">
+
+                    <div class="image-box"><img src="image/IMG2.jpg"alt="first work or project">
+                    </div>
+
+                    <div class="image-box"><img src="image/IMG3.jpg"alt="second work or project">
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- Interests end -->
+
+
+            <!-- Goals start -->
+            <section id="section3" class="section3">
+
+                <h2>Goals</h2>
+
+                <p>
+                    One of my future goals is to work in game development.
+                    I am interested in game design because I like the idea
+                    of creating games, designing how they work, and building
+                    game experiences that other people can enjoy. Learning
+                    HTML, CSS, JavaScript, and programming is helping me
+                    develop the technical skills I need to work toward this goal.
+                </p>
+
+            </section>
+            <!-- Goals end -->
+        </main><!-- main end -->
+        
+        <section id="section4" class="section4"><!-- Contact start -->
+
+            
+    <h3>Feedback</h3>
+
+    <p>
+        I would appreciate your feedback about my portfolio.
+    </p>
+
+    <form id="feedbackForm" novalidate>
+
+                
+                <div class="form"><!-- form start -->
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text"id="name"name="name"placeholder=" Enter your full name"required  aria-describedby="nameError">
+                    <small id="nameError" class="Error-message"></small>
+                    </div>
+
+
+<!--email start-->
+                  <div>
+                        <label for="email">Email</label>
+                        <input type="email"id="email"name="email" placeholder=" Enter your email"required aria-describedby="emailError">
+                    <small id="emailError" class="Error-message"></small>
+                    </div>
+
+                    <!--topic start-->
+<div>
+    <label for="topic">Topic of interest</label>
+    <select id="topic"name="topic"required aria-describedby="topicError">
+<option value="">Select a topic</option>
+<option value="web">web development</option>
+<option value="game">Game development</option>
+<option value="programing">programing</option>
+<option value="other">other</option>
+                 
+    </select> 
+    <small id="Error" class="Error"></small>
+   
+</div>
+        <!--topic end-->       
+            <div>
+          <textarea id="message" name="message" rows="5"
+    placeholder="Write your comments here..."
+    required
+    aria-describedby="commentsError commentCounter">
+</textarea>
+              <small id="commentCounter">0 / 15 characters</small>
+                <small id="commentsError" class="error-message"></small>  
+    
+                
+                <div>
+                <button type="submit">Send</button>
+                <button type="button" id="clear">Clear</button>
+            </div>
+
+            <!--status message-->
+ <p id="formStatus" role="status" aria-live="polite"></p>
+
+            </form> <!-- form end -->
+ 
+        </section>
+        <!-- section end -->
+    </div>
+
+
+     <div class="footer">
+        <footer><!--footer start-->
+        
+               <h4>Contact info</h4>
+               <br/>
+               
+                  <br />dedj<br />
+                  Sevedstorp 8<br />
+                  543 21 Vimmerby
+               </p> 
+    <p>
+    <a href="#Privacy">Privacy</a> </p> 
+    <a href="#Terms">Terms</a>
+</p>
+       <p>&copy; DEDJ 2026</p> 
+
+      </footer><!--footer end-->
+
+  <!--skapad av D F,D 
+2026-11-03-->
+
+    </div><!--div slut-->
+    <!--body end-->
+  </body>
+  <!--html end-->
+</html>
+
