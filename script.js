@@ -135,11 +135,11 @@ function validateComments() {
 
     clearError(comments, commentsError);
 
-    if (commentsValue.length < 15) {
+    if (commentsValue.length < 15 || commentsValue.length > 40) {
 
         showFieldError(
             comments,
-            "Comments must contain at least 15 characters.",
+            "Comments must contain  between 15 and 40 characters.",
             commentsError
         );
 
@@ -168,9 +168,9 @@ function updateCounter() {
     const characterCount = comments.value.trim().length;
 
     commentsCounter.textContent =
-        characterCount + " / 15 characters";
+        characterCount + " / 40 characters";
 
-    if (characterCount >= 15) {
+    if (characterCount >= 15 && characterCount <= 40) {
 
         commentsCounter.classList.add("counter-valid");
 
